@@ -6,6 +6,7 @@
 RedPhantom is an advanced, AI-powered security assessment framework designed for red team operations. It provides comprehensive reconnaissance, analysis, and reporting capabilities while maintaining a strict safety-first approach. This tool performs non-exploitative scanning and analysis, ensuring no unauthorized access or modifications to target systems.
 
 **Important Safety Notice:**  
+---
 RedPhantom is intended for ethical security assessments only. Use requires explicit authorization from system owners. Unauthorized use may violate laws such as the Computer Fraud and Abuse Act (CFAA). The developers assume no liability for misuse. Always prioritize ethical hacking practices and comply with local regulations.
 
 ## Features
