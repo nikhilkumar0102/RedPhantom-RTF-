@@ -10,6 +10,7 @@ sys.path.append(CURRENT_DIR)
 from external.shodan_recon import run as shodan_run
 from external.subdomain_enum import run as subdomain_run
 from external.dns_enum import run as dns_run
+from external.nmap_port_vuln_scan import run as nmap_port
 
 # ========= Internal Recon =========
 from internal.network_scan import run as network_run
@@ -57,7 +58,8 @@ def external_menu():
 {Colors.WHITE}[1] Shodan Recon{Colors.END}
 {Colors.WHITE}[2] Subdomain Enumeration{Colors.END}
 {Colors.WHITE}[3] DNS Enumeration{Colors.END}
-{Colors.RED}[4] Back{Colors.END}
+{Colors.WHITE}[4] Nmap Port & Vulnerability Discovery{Colors.END}
+{Colors.RED}[5] Back{Colors.END}
 """)
     return input("Select option: ").strip()
 
@@ -88,6 +90,8 @@ def run(engagement):
                 elif ext == "3":
                     dns_run(engagement)
                 elif ext == "4":
+                    nmap_port(engagement)
+                elif ext == "5":
                     break
 
         elif choice == "2":
