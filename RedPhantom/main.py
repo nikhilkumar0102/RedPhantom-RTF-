@@ -41,7 +41,7 @@ def show_main_menu():
 {Colors.YELLOW}[5] Lateral Movement{Colors.END}
 {Colors.YELLOW}[6] Persistence{Colors.END}
 {Colors.RED}[7] Cleanup & Anti-Forensics{Colors.END}
-{Colors.WHITE}[8] Reporting{Colors.END}
+{Colors.WHITE}[8] AI Exposure & Risk Assessment{Colors.END}
 {Colors.YELLOW}[9] Run Full Red Team Simulation{Colors.END}
 {Colors.RED}[99] Exit{Colors.END}
 """)
@@ -117,7 +117,7 @@ def main():
             run_phase(engagement, "cleanup")
 
         elif choice == "8":
-            run_phase(engagement, "reporting")
+            run_phase(engagement, "ai_scan")
 
         elif choice == "9":
             for phase in [
