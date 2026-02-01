@@ -1,10 +1,5 @@
 # RedPhantom-RTF
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python Version](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Build Status](https://img.shields.io/badge/Build-Passing-green.svg)](https://github.com/YOUR_USERNAME/RedPhantom/actions)
-[![Code Style: Black](https://img.shields.io/badge/Code%20Style-Black-black.svg)](https://black.readthedocs.io/en/stable/)
-
 RedPhantom is an advanced, AI-powered security assessment framework designed for red team operations. It provides comprehensive reconnaissance, analysis, and reporting capabilities while maintaining a strict safety-first approach. This tool performs non-exploitative scanning and analysis, ensuring no unauthorized access or modifications to target systems.
 
 **Important Safety Notice:**  
