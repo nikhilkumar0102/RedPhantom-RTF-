@@ -1,6 +1,6 @@
 # RedPhantom-RTF
 
-
+![RedPhantom](Screenshots/Banner.png)
 
 RedPhantom is an advanced, AI-powered security assessment framework designed for red team operations. It provides comprehensive reconnaissance, analysis, and reporting capabilities while maintaining a strict safety-first approach. This tool performs non-exploitative scanning and analysis, ensuring no unauthorized access or modifications to target systems.
 
