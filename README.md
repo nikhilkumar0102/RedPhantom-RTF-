@@ -24,16 +24,16 @@
 RedPhantom-RTF is a professional security assessment framework designed **EXCLUSIVELY** for authorized, ethical security testing. By using this tool, you acknowledge and agree to:
 
 ### Legal Requirements
-- ✅ **WRITTEN AUTHORIZATION REQUIRED**: You must have explicit, written permission from the system owner before any scanning or testing
-- ⚖️ **Legal Compliance**: Unauthorized use may violate laws including Computer Fraud and Abuse Act (CFAA), Computer Misuse Act, GDPR, and similar cybercrime laws
-- 🚫 **Penalties**: Unauthorized access can result in criminal charges, fines, and imprisonment
+-  **WRITTEN AUTHORIZATION REQUIRED**: You must have explicit, written permission from the system owner before any scanning or testing
+-  **Legal Compliance**: Unauthorized use may violate laws including Computer Fraud and Abuse Act (CFAA), Computer Misuse Act, GDPR, and similar cybercrime laws
+-  **Penalties**: Unauthorized access can result in criminal charges, fines, and imprisonment
 
 ### Ethical Guidelines
-- 🎯 Only test systems you own or have explicit permission to test
-- 📝 Document all testing activities and maintain engagement records
-- 🔒 Protect all discovered vulnerabilities and handle data responsibly
-- 👥 Respect privacy and confidentiality of all parties involved
-- 🛡️ Follow responsible disclosure practices for any findings
+-  Only test systems you own or have explicit permission to test
+-  Document all testing activities and maintain engagement records
+-  Protect all discovered vulnerabilities and handle data responsibly
+-  Respect privacy and confidentiality of all parties involved
+-  Follow responsible disclosure practices for any findings
 
 ### Liability Disclaimer
 **THE DEVELOPERS AND CONTRIBUTORS OF REDPHANTOM-RTF ASSUME NO LIABILITY FOR MISUSE, UNAUTHORIZED ACCESS, DATA LOSS, LEGAL CONSEQUENCES, OR ANY VIOLATIONS OF APPLICABLE LAWS.**
@@ -42,36 +42,19 @@ RedPhantom-RTF is a professional security assessment framework designed **EXCLUS
 
 ---
 
-## 📋 Table of Contents
-
-- [About](#about-redphantom-rtf)
-- [Features](#features)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage Guide](#usage-guide)
-- [Troubleshooting](#troubleshooting)
-- [Security Best Practices](#security-best-practices)
-- [Development Roadmap](#development-roadmap)
-- [Contributing](#contributing)
-- [FAQ](#faq)
-- [License](#license)
-
----
-
-## 🎯 About RedPhantom-RTF
+##  About RedPhantom-RTF
 
 RedPhantom-RTF (Red Team Framework) is an advanced, AI-powered security assessment platform built for comprehensive red team operations combining traditional penetration testing with modern AI capabilities.
 
 ### What Makes RedPhantom Unique?
 
-- 🤖 **AI-Enhanced Analysis**: Multi-provider AI integration (OpenAI, Google Gemini)
-- 🔍 **Comprehensive Reconnaissance**: Advanced OSINT, subdomain enumeration
-- 📊 **Professional Reporting**: HTML reports with executive summaries
-- 🛡️ **Safety-First Design**: Non-exploitative scanning
-- 🎨 **Modular Architecture**: Extensible framework
-- 📈 **MITRE ATT&CK Mapping**: Industry-standard alignment
-- ⚡ **Automation-Ready**: CI/CD integration support
+-  **AI-Enhanced Analysis**: Multi-provider AI integration (OpenAI, Google Gemini)
+-  **Comprehensive Reconnaissance**: Advanced OSINT, subdomain enumeration
+-  **Professional Reporting**: HTML reports with executive summaries
+-  **Safety-First Design**: Non-exploitative scanning
+-  **Modular Architecture**: Extensible framework
+-  **MITRE ATT&CK Mapping**: Industry-standard alignment
+-  **Automation-Ready**: CI/CD integration support
 
 ### Use Cases
 
@@ -129,27 +112,27 @@ RedPhantom-RTF follows a modular, plugin-based architecture:
 
 ```
 ┌─────────────────────────────────────────┐
-│       RedPhantom-RTF Core              │
-│  ┌──────────┐  ┌──────────┐           │
-│  │   CLI    │  │ Web/API  │           │
-│  └────┬─────┘  └────┬─────┘           │
-│       │             │                  │
-│  ┌────▼─────────────▼──────┐          │
-│  │  Workflow Engine         │          │
-│  └────┬─────────────────────┘          │
+│       RedPhantom-RTF Core               │
+│  ┌──────────┐  ┌──────────┐             │
+│  │   CLI    │  │ Web/API  │             │
+│  └────┬─────┘  └────┬─────┘             │
+│       │             │                   │
+│  ┌────▼─────────────▼──────┐            │
+│  │  Workflow Engine        │            │
+│  └────┬────────────────────┘            │
 │       │                                 │
-│  ┌────▼─────────────────────┐          │
-│  │  Module Management       │          │
-│  └┬────┬────────┬──────────┘          │
-│   │    │        │                      │
-│ ┌▼─┐┌▼──┐  ┌▼────┐                   │
-│ │Recon││Analysis││Report│             │
-│ └───┘└────┘  └─────┘                  │
+│  ┌────▼────────────────────┐            │
+│  │  Module Management      │            │
+│  └┬─────────┬─────────┬────┘            │
+│   │         │         │                 │
+│ ┌─▼───┐┌────▼───┐ ┌───▼───┐             │
+│ │Recon││Analysis│ │Report │             │
+│ └─────┘└────────┘ └───────┘             │
 │       │                                 │
-│  ┌────▼──────────────────┐            │
-│  │  Data & AI Layer      │            │
-│  │  (OpenAI, Gemini)     │            │
-│  └───────────────────────┘            │
+│  ┌────▼──────────────────┐              │
+│  │  Data & AI Layer      │              │
+│  │  (OpenAI, Gemini)     │              │
+│  └───────────────────────┘              │
 └─────────────────────────────────────────┘
 ```
 
@@ -157,7 +140,7 @@ RedPhantom-RTF follows a modular, plugin-based architecture:
 
 ---
 
-## 💻 Installation
+## Installation
 
 ### Prerequisites
 
@@ -183,8 +166,12 @@ pip install --upgrade pip
 pip install -r requirements.txt
 
 # Verify installation
-python RedPhantom/main.py --version
+python3 RedPhantom/main.py --version
+
+# Execution
+python3 RedPhantom/main.py 
 ```
+
 
 ### Optional Dependencies
 
@@ -205,7 +192,7 @@ docker run -it --rm -v $(pwd)/reports:/app/reports -e OPENAI_API_KEY=your_key re
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -400,25 +387,25 @@ python RedPhantom/main.py --target example.com --modules recon,port_scan --threa
 
 ---
 
-## 🛡️ Security Best Practices
+##  Security Best Practices
 
 ### Before Assessment
 
-1. ✅ **Obtain Written Authorization** - Get explicit, signed permission
-2. 📝 **Document Everything** - Maintain detailed logs
-3. 🔒 **Secure Your Environment** - Use VPN, secure credentials
+1.  **Obtain Written Authorization** - Get explicit, signed permission
+2.  **Document Everything** - Maintain detailed logs
+3.  **Secure Your Environment** - Use VPN, secure credentials
 
 ### During Assessment
 
-1. ⚠️ **Monitor Impact** - Watch system performance
-2. 📊 **Stay Within Scope** - Only test authorized systems
-3. 🔐 **Protect Discovered Data** - Encrypt sensitive findings
+1.  **Monitor Impact** - Watch system performance
+2.  **Stay Within Scope** - Only test authorized systems
+3.  **Protect Discovered Data** - Encrypt sensitive findings
 
 ### After Assessment
 
-1. 📄 **Responsible Disclosure** - Report findings promptly
-2. 🗑️ **Secure Cleanup** - Delete temporary files
-3. 📈 **Continuous Improvement** - Review lessons learned
+1.  **Responsible Disclosure** - Report findings promptly
+2.  **Secure Cleanup** - Delete temporary files
+3. **Continuous Improvement** - Review lessons learned
 
 ### Data Protection
 
@@ -435,7 +422,7 @@ export OPENAI_API_KEY=$(pass show openai/api-key)
 
 ---
 
-## 🚀 Development Roadmap
+##  Development Roadmap
 
 ### Phase 1: Core Stability (Q1 2026) ⏳
 
