@@ -57,3 +57,96 @@ urllib3>=1.26.15        # HTTP library with security features
 pytest>=7.3.1           # Testing framework
 black>=23.3.0           # Code formatter
 pylint>=2.17.4          # Code linter
+
+
+# Enhanced Web Vulnerability Scanner - Python Dependencies
+# Version: 4.0
+# Python Version: 3.8+
+
+# ==============================================================================
+# Core HTTP & API Libraries
+# ==============================================================================
+requests>=2.31.0          # HTTP library for API calls to Vulners.com
+urllib3>=2.0.0            # HTTP client used by requests
+
+# ==============================================================================
+# JSON & Data Processing
+# ==============================================================================
+# Note: json is built-in to Python, no external package needed
+
+# ==============================================================================
+# System & Process Management
+# ==============================================================================
+# Note: subprocess, os, shutil, sys, threading are built-in to Python
+
+# ==============================================================================
+# Optional: Enhanced Features (Uncomment if needed)
+# ==============================================================================
+
+# For advanced HTML report generation (optional)
+# beautifulsoup4>=4.12.0    # HTML parsing and manipulation
+# lxml>=4.9.0               # XML/HTML processing
+
+# For PDF report generation (optional)
+# reportlab>=4.0.0          # PDF creation library
+# pypdf>=3.17.0             # PDF manipulation
+
+# For Excel/CSV export (optional)
+# openpyxl>=3.1.0           # Excel file generation
+# pandas>=2.0.0             # Data manipulation and CSV handling
+
+# For enhanced progress bars (optional - current implementation uses custom)
+# tqdm>=4.66.0              # Advanced progress bars
+# rich>=13.7.0              # Rich terminal formatting
+
+# For database storage of scan results (optional)
+# sqlalchemy>=2.0.0         # SQL database ORM
+# sqlite3                   # Built-in SQLite support
+
+# For API response validation (optional)
+# jsonschema>=4.20.0        # JSON schema validation
+# pydantic>=2.5.0           # Data validation using Python type hints
+
+# ==============================================================================
+# Security & Cryptography (optional)
+# ==============================================================================
+# cryptography>=41.0.0      # For encrypted storage of API keys
+# python-dotenv>=1.0.0      # Load environment variables from .env files
+
+# ==============================================================================
+# Logging & Monitoring (optional)
+# ==============================================================================
+# colorlog>=6.8.0           # Colored logging output
+# loguru>=0.7.0             # Simplified logging
+
+# ==============================================================================
+# Testing & Development (optional)
+# ==============================================================================
+# pytest>=7.4.0             # Testing framework
+# pytest-cov>=4.1.0         # Code coverage
+# black>=23.12.0            # Code formatter
+# flake8>=7.0.0             # Linting
+# mypy>=1.8.0               # Static type checking
+
+# ==============================================================================
+# Notes
+# ==============================================================================
+# 
+# REQUIRED EXTERNAL TOOLS (not Python packages):
+# - nikto: Web server scanner (install via: apt install nikto)
+# - sqlmap: SQL injection scanner (install via: apt install sqlmap)
+#
+# INSTALLATION:
+# pip3 install -r requirements.txt --break-system-packages
+#
+# OR (if using virtual environment):
+# python3 -m venv venv
+# source venv/bin/activate
+# pip install -r requirements.txt
+#
+# VULNERS API KEY:
+# Get your free API key at: https://vulners.com/userinfo
+# Set it via:
+#   - Environment variable: export VULNERS_API_KEY="your_key"
+#   - Config file: ~/.vulners_config.json
+#   - Interactive prompt when running the scanner
